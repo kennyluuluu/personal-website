@@ -3,7 +3,7 @@ const colors = {
     c2: "#B19F9E",
     c3: "#CEBC81",
     c4: '#A16E83',
-    c5: '#B19F9E'
+    c5: '#479761',
 }
 
 export {colors};
