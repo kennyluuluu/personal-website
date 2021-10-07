@@ -17,4 +17,14 @@ const resumeData = {
   description: "I am a software engineer",
 };
 
-export { resumeData as default, colors };
+const projectData = [
+  {
+    imageSrc: "../imageHolder.png",
+    title: "fol.io",
+    description:
+      "Financial portfolio advisor that utilizes public sentiment towards companies in order to predict stock changes using our FolioScore quantifier. Awarded Best Use of Google Cloud API at LAHacks 2018.",
+  },
+  {},
+];
+
+export { resumeData as default, colors, projectData };

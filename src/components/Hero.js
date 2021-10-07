@@ -8,7 +8,7 @@ export default class Hero extends Component {
       <div
         style={{ backgroundColor: colors.c5, color: colors.c3, height: "90vh" }}
       >
-        <div style={{ position: "relative", top: "50%", left: "25vw" }}>
+        <div style={{ position: "absolute", top: "50%", left: "25%" }}>
           <h1>Hello, world!</h1>
           <p>This is a blurb about myself, Kenny Luu.</p>
         </div>
