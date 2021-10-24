@@ -1,30 +1,32 @@
-import React, { Component, useState } from "react";
-import { Card, CardGroup } from "react-bootstrap";
-import { projectData } from "../data";
+import React, { useState } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import { projectData, colors } from "../data";
+import ProjectCard from "./ProjectCard";
 
-export default class Projects extends Component {
-  constructor() {
-    super();
-    this.state = {
-      images: require.context("../../public/images", true),
-    };
-  }
-
-  render() {
-    let cards = [];
-    for (let i = 0; i < projectData.length; i++) {
-      // let path = `${projectData[i].imageSrc}`;
-      // let image = this.images(`./imageHolder.png`);
-      cards.push(
-        <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src={"X"} />
-          <Card.Body>
-            <Card.Title>{projectData[i].title}</Card.Title>
-            <Card.Text>{projectData[i].description}</Card.Text>
-          </Card.Body>
-        </Card>
+const Projects = () => {
+  const [cards] = useState(
+    projectData.map((project) => {
+      return (
+        <Col style={{ padding: "100px" }}>
+          <ProjectCard
+            title={project.title}
+            description={project.description}
+            image={project.imageSrc}
+          />
+        </Col>
       );
+    })
+  );
+
+  const getRows = () => {
+    let rows = [];
+    for (let i = 0; i < cards.length; i = i + 2) {
+      rows.push(<Row style={{ height: "70vh" }}>{cards.slice(i, i + 2)}</Row>);
     }
-    return <CardGroup>{cards}</CardGroup>;
-  }
-}
+    return rows;
+  };
+
+  return <Container style={{ left: "25%" }}>{getRows()}</Container>;
+};
+
+export default Projects;

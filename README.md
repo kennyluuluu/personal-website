@@ -12,3 +12,9 @@ My own personal website to showcase who I am, what I've learned, and what I like
 6. experience
 7. books
 8. hobbies
+
+# Backlog
+
+add backlog visible on sight
+use GitHub API to view github account
+Keep Journal of daily goals and tasks
