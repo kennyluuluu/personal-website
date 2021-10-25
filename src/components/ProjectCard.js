@@ -20,7 +20,7 @@ const ProjectCard = (props) => {
           margin: "auto",
           maxHeight: "20vh",
           height: "auto",
-          maxWidth: "20vw",
+          maxWidth: "20vh",
           width: "auto",
         }}
       />

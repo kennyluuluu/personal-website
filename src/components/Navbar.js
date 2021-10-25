@@ -11,16 +11,14 @@ const MyNavbar = () => {
       sticky="top"
     >
       <Container>
-        <Navbar.Brand href="#home" style={{ color: colors.c3 }}>
-          LUU
-        </Navbar.Brand>
+        <Navbar.Brand style={{ color: colors.c3 }}>LUU</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link style={{ color: colors.c3 }} href="#home">
+            <Nav.Link style={{ color: colors.c3 }} href="/">
               Home
             </Nav.Link>
-            <Nav.Link style={{ color: colors.c3 }} href="#link">
+            <Nav.Link style={{ color: colors.c3 }} href="/projects">
               Projects
             </Nav.Link>
             <Nav.Link
@@ -29,6 +27,9 @@ const MyNavbar = () => {
               target="_blank"
             >
               Resume
+            </Nav.Link>
+            <Nav.Link style={{ color: colors.c3 }} href="/contact">
+              Contact
             </Nav.Link>
             <NavDropdown
               title="Interests"
