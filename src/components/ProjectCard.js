@@ -3,13 +3,14 @@ import { Card } from "react-bootstrap";
 import { colors } from "../data";
 import imageHolder from "../assets/imageHolder.png";
 import folio from "../assets/folio.png";
-const images = { imageHolder, folio };
+import sudoku from "../assets/backtrackingSudoku.gif";
+const images = { imageHolder, folio, sudoku };
 
 const ProjectCard = (props) => {
   return (
     <Card
       text={"white"}
-      style={{ backgroundColor: colors.c5, width: "20vw", height: "60vh" }}
+      style={{ backgroundColor: colors.c5, width: "20vw", height: "50vh" }}
       className="box"
     >
       <Card.Img
@@ -20,12 +21,19 @@ const ProjectCard = (props) => {
           margin: "auto",
           maxHeight: "20vh",
           height: "auto",
-          maxWidth: "20vh",
+          maxWidth: "20vw",
           width: "auto",
+          padding: "1vh",
         }}
       />
+      <Card.Title
+        style={{
+          margin: "auto",
+        }}
+      >
+        {props.title}
+      </Card.Title>
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
         <Card.Text>{props.description}</Card.Text>
       </Card.Body>
     </Card>

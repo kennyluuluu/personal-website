@@ -31,7 +31,7 @@ const MyNavbar = () => {
             <Nav.Link style={{ color: colors.c3 }} href="/contact">
               Contact
             </Nav.Link>
-            <NavDropdown
+            {/* <NavDropdown
               title="Interests"
               style={{ color: colors.c3 }}
               id="basic-nav-dropdown"
@@ -41,7 +41,7 @@ const MyNavbar = () => {
               <NavDropdown.Item href="#action/3.2">Games</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.3">Sports</NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

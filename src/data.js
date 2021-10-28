@@ -26,40 +26,10 @@ const projectData = [
       "Financial portfolio advisor that utilizes public sentiment towards companies in order to predict stock changes using our FolioScore quantifier. Awarded Best Use of Google Cloud API at LAHacks 2018.",
   },
   {
-    imageSrc: "folio",
-    title: "Fol.io2",
+    imageSrc: "sudoku",
+    title: "Sudoku Solver",
     description:
-      "Financial portfolio advisor that utilizes public sentiment towards companies in order to predict stock changes using our FolioScore quantifier. Awarded Best Use of Google Cloud API at LAHacks 2018.",
-  },
-  {
-    imageSrc: "imageHolder",
-    title: "Fol.io3",
-    description:
-      "Financial portfolio advisor that utilizes public sentiment towards companies in order to predict stock changes using our FolioScore quantifier. Awarded Best Use of Google Cloud API at LAHacks 2018.",
-  },
-  {
-    imageSrc: "imageHolder",
-    title: "Fol.io4",
-    description:
-      "Financial portfolio advisor that utilizes public sentiment towards companies in order to predict stock changes using our FolioScore quantifier. Awarded Best Use of Google Cloud API at LAHacks 2018.",
-  },
-  {
-    imageSrc: "imageHolder",
-    title: "Fol.io5",
-    description:
-      "Financial portfolio advisor that utilizes public sentiment towards companies in order to predict stock changes using our FolioScore quantifier. Awarded Best Use of Google Cloud API at LAHacks 2018.",
-  },
-  {
-    imageSrc: "imageHolder",
-    title: "Fol.io6",
-    description:
-      "Financial portfolio advisor that utilizes public sentiment towards companies in order to predict stock changes using our FolioScore quantifier. Awarded Best Use of Google Cloud API at LAHacks 2018.",
-  },
-  {
-    imageSrc: "imageHolder",
-    title: "Fol.io7",
-    description:
-      "Financial portfolio advisor that utilizes public sentiment towards companies in order to predict stock changes using our FolioScore quantifier. Awarded Best Use of Google Cloud API at LAHacks 2018.",
+      "A Sudoku Solver application that utilizes backtracking algorithm. Designed simple and intuitive GUI using JSwing library",
   },
 ];
 
